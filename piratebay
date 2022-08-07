@@ -1,0 +1,68 @@
+local SolarisLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Stebulous/solaris-ui-lib/main/source.lua"))()
+
+--[[SolarisLib:New({
+  Name - Title of the UI <string>
+  FolderToSave - Name of the folder where the UI files will be stored <string>
+})]]
+local win = SolarisLib:New({
+  Name = "HSDL - Pirate Bay",
+      FolderToSave = "HSDL"
+})
+
+SolarisLib:Notification("Update Log:", 'added FE Headless')
+
+--win:Tab(title <string>)
+local tab = win:Tab("hsdl")
+
+--tab:Section(title <string>)
+local sec = tab:Section("scripts")
+
+sec:Button("Time click more for faster", function()
+    while true do
+    wait(0.1)
+    game.ReplicatedStorage.GetMoney:FireServer(0.1)
+    end    
+end)
+
+sec:Textbox("money dont put too much or itll go negative", true, function(t)
+  game.ReplicatedStorage.GetMoney:FireServer(t)
+end)
+
+sec:Button("money reset", function()
+    game:GetService("ReplicatedStorage").LoseMoney:FireServer(game.Players.LocalPlayer.leaderstats.Money.Value)
+end)
+
+sec:Button("okay leila Detention Spam", function()
+    while true do
+    wait(0.1)
+    game:GetService("ReplicatedStorage").Detention:FireServer(game:GetService("Players").okayleila)
+    end
+end)
+
+sec:Button("FE Headless", function()
+    game.ReplicatedStorage.RPName:FireServer("h")
+    game.Players.LocalPlayer.Character:WaitForChild("h")
+    game.Players.LocalPlayer.Character.h:Destroy()
+    game.Players.LocalPlayer.Character.Head.face:Destroy()
+end)
+
+sec:Button("SimplitFe", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/HeyGyt/simpl1t/main/main"))()
+end)
+
+sec:Button("IY", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+sec:Button("Universalfe", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Dvrknvss/UniversalFEScriptHub/main/Script'))()
+end)
+
+--win:Tab(title <string>)
+local tab = win:Tab("High School Dorm Life")
+
+--tab:Section(title <string>)
+
+local sec2 = tab:Section("CREDITS")
+
+local label = sec2:Label("made by ! peaW#7239 and russia#4094, creds to IY, Universalfe, Simplityfe and 4z#2249 for money reset script")
