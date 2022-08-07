@@ -11,6 +11,7 @@ local win = SolarisLib:New({
 
 SolarisLib:Notification("Credits", 'made by ! peaW#7239 and russia#4094, creds to 4z#2249 for money reset script')
 SolarisLib:Notification("Update Log:", 'added DeniroHub and Fates Admin to scripts tab')
+SolarisLib:Notification("Current Version:", '0.9.1')
 
 --win:Tab(title <string>)
 local tab = win:Tab("hsdl")
@@ -34,6 +35,8 @@ sec:Button("money reset", function()
 end)
 
 sec:Button("okay leila Detention Spam", function()
+    wait(3)
+    SolarisLib:Notification("detention spamming", 'please wait')
     while true do
     wait(0.1)
     game:GetService("ReplicatedStorage").Detention:FireServer(game:GetService("Players").okayleila)
