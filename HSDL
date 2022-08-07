@@ -9,7 +9,8 @@ local win = SolarisLib:New({
       FolderToSave = "HSDL"
 })
 
-SolarisLib:Notification("Update Log:", 'added FE Headless')
+SolarisLib:Notification("Credits", 'made by ! peaW#7239 and russia#4094, creds to 4z#2249 for money reset script')
+SolarisLib:Notification("Update Log:", 'added DeniroHub and Fates Admin to scripts tab')
 
 --win:Tab(title <string>)
 local tab = win:Tab("hsdl")
@@ -46,23 +47,38 @@ sec:Button("FE Headless", function()
     game.Players.LocalPlayer.Character.Head.face:Destroy()
 end)
 
-sec:Button("SimplitFe", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/HeyGyt/simpl1t/main/main"))()
-end)
-
-sec:Button("IY", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-end)
-
-sec:Button("Universalfe", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/Dvrknvss/UniversalFEScriptHub/main/Script'))()
-end)
-
 --win:Tab(title <string>)
-local tab = win:Tab("High School Dorm Life")
+local tab = win:Tab("scripts")
 
 --tab:Section(title <string>)
 
-local sec2 = tab:Section("CREDITS")
+local sec2 = tab:Section("Scripts")
 
-local label = sec2:Label("made by ! peaW#7239 and russia#4094, creds to IY, Universalfe, Simplityfe and 4z#2249 for money reset script")
+sec2:Button("SimplitFe", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/HeyGyt/simpl1t/main/main"))()
+end)
+
+sec2:Button("IY", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+sec2:Button("Deniro Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/QieQmp/Deniro-Hub-V4/main/Deniro%20Hub%20V4", true))()
+end)
+
+sec2:Button("Fates Admin", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
+end)
+
+sec2:Button("Universalfe", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Dvrknvss/UniversalFEScriptHub/main/Script'))()
+end)
+
+local tab = win:Tab("credits")
+
+local sec3 = tab:Section("discord")
+
+sec3:Button("Discord", function()
+    SolarisLib:Notification("Notification", 'discord copied to clipboard')
+    setclipboard("https://discord.gg/jj7jUkwtQ5")
+end)
