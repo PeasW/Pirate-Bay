@@ -1,7 +1,4 @@
 --// hello world
 if game.PlaceId == 597114278 then
     loadstring(game:HttpGet('https://raw.githubusercontent.com/PeasW/Pirate-Bay/main/HSDL'))()
-
-if game.PlaceId == 10405081114 then
-    print('placeholder')
 end
