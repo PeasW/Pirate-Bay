@@ -9,9 +9,9 @@ local win = SolarisLib:New({
       FolderToSave = "HSDL"
 })
 
-SolarisLib:Notification("Credits", 'made by ! peaW#7239 and russia#4094, creds to 4z#2249 for money reset script')
-SolarisLib:Notification("Update Log:", 'added DeniroHub and Fates Admin to scripts tab')
-SolarisLib:Notification("Current Version:", '1.0.4')
+SolarisLib:Notification("Credits", 'made by ! peaW#7239 and russia#4094')
+SolarisLib:Notification("Update Log:", 'fixed loader')
+SolarisLib:Notification("Current Version:", '1.0.7')
 
 --win:Tab(title <string>)
 local tab = win:Tab("hsdl")
