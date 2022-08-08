@@ -8,6 +8,16 @@ if game.PlaceId == 597114278 then
     event:FireServer(words[math.random(#words)], "All")
     wait(5)
     loadstring(game:HttpGet('https://raw.githubusercontent.com/PeasW/Pirate-Bay/main/HSDL'))()
+if game.PlaceId == 155615604 then
+        local words = {
+    'Pirate Bay Loading'
+    }
+
+    local event = game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest
+    event:FireServer(words[math.random(#words)], "All")
+    wait(5)
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/PeasW/Pirate-Bay/main/PL'))()
 elseif
-    print('placeholder') then
+    print("as") then
+end
 end
