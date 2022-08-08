@@ -13,8 +13,8 @@ local cfag = game.Players.LocalPlayer.Character.HumanoidRootPart
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-888.582275, 94.1270294, 2154.46777, -0.203320533, -6.74215102e-08, -0.979112208, -2.78061822e-08, 1, -6.30856647e-08, 0.979112208, 1.43987631e-08, -0.203320533)
 
 SolarisLib:Notification("Credits", 'made by ! peaW#7239 and russia#4094')
-SolarisLib:Notification("Update Log:", 'added prison life')
-SolarisLib:Notification("Current Version:", '1.0.4')
+SolarisLib:Notification("Update Log:", 'fixed loader')
+SolarisLib:Notification("Current Version:", '1.0.7')
 
 --win:Tab(title <string>)
 local tab = win:Tab("pRISon LiFE")
