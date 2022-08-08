@@ -1,0 +1,116 @@
+local SolarisLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Stebulous/solaris-ui-lib/main/source.lua"))()
+
+--[[SolarisLib:New({
+  Name - Title of the UI <string>
+  FolderToSave - Name of the folder where the UI files will be stored <string>
+})]]
+local win = SolarisLib:New({
+  Name = "Prison Life - Pirate Bay",
+      FolderToSave = "PLPB"
+})
+local cfag = game.Players.LocalPlayer.Character.HumanoidRootPart
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-888.582275, 94.1270294, 2154.46777, -0.203320533, -6.74215102e-08, -0.979112208, -2.78061822e-08, 1, -6.30856647e-08, 0.979112208, 1.43987631e-08, -0.203320533)
+
+SolarisLib:Notification("Credits", 'made by ! peaW#7239 and russia#4094')
+SolarisLib:Notification("Update Log:", 'added prison life')
+SolarisLib:Notification("Current Version:", '1.0.4')
+
+--win:Tab(title <string>)
+local tab = win:Tab("pRISon LiFE")
+
+--tab:Section(title <string>)
+local sec = tab:Section("scripts")
+
+sec:Button("gun mod", function()
+    local gay = require(game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Tool").GunStates)
+
+    gay["FireRate"] = 0.1
+    gay["AutoFire"] = true
+    gay["Range"] = math.huge
+    gay["Spread"] = 0
+    gay["Bullets"] = 7
+    gay["ReloadTime"] = 0
+    gay["MaxAmmo"] = math.huge
+    gay["StoredAmmo"] = math.huge
+    gay["Damage"] = 30
+
+end)
+
+sec:Button("remington", function()
+    local ohInstance1 = workspace.Prison_ITEMS.giver["Remington 870"].ITEMPICKUP
+
+    workspace.Remote.ItemHandler:InvokeServer(ohInstance1)
+end)
+
+sec:Button("m9", function()
+    local ohInstance2 = workspace.Prison_ITEMS.giver.M9.ITEMPICKUP
+
+    workspace.Remote.ItemHandler:InvokeServer(ohInstance2)
+end)
+
+sec:Button("ak47", function()
+    local ohInstance3 = workspace.Prison_ITEMS.giver["AK-47"].ITEMPICKUP
+
+    workspace.Remote.ItemHandler:InvokeServer(ohInstance3)
+end)
+
+sec:Button("Guard", function()
+    Workspace.Remote.TeamEvent:FireServer("Bright blue")
+end)
+
+sec:Button("inmate", function()
+    Workspace.Remote.TeamEvent:FireServer("Bright orange")
+end)
+
+local tab = win:Tab("teleports")
+
+local sec4 = tab:Section("Scripts")
+
+sec4:Button("prison teleport", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(916.235657, 99.989975, 2373.3103, 0.999955595, -5.57162139e-08, -0.00942490622, 5.48548584e-08, 1, -9.16497314e-08, 0.00942490622, 9.11286548e-08, 0.999955595)
+end)
+
+sec4:Button("Guards room teleport", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(832.099243, 99.9899826, 2317.01025, -0.999995232, 3.60536987e-08, -0.00308783771, 3.58573438e-08, 1, 6.36442437e-08, 0.00308783771, 6.35332142e-08, -0.999995232)
+end)
+
+sec4:Button("yard teleport", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(774.447144, 97.9999237, 2468.35864, -0.103519917, 3.38634329e-08, -0.994627357, -9.25605548e-08, 1, 4.36799716e-08, 0.994627357, 9.6585012e-08, -0.103519917)
+end)
+
+sec4:Button("crim base", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-888.582275, 94.1270294, 2154.46777, -0.203320533, -6.74215102e-08, -0.979112208, -2.78061822e-08, 1, -6.30856647e-08, 0.979112208, 1.43987631e-08, -0.203320533)
+end)
+
+--win:Tab(title <string>)
+local tab = win:Tab("scripts")
+
+--tab:Section(title <string>)
+
+local sec2 = tab:Section("Scripts")
+
+sec2:Button("SimplitFe", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/HeyGyt/simpl1t/main/main"))()
+end)
+
+sec2:Button("IY", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+sec2:Button("Fates Admin", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
+end)
+
+sec2:Button("Universalfe", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Dvrknvss/UniversalFEScriptHub/main/Script'))()
+end)
+
+local tab = win:Tab("credits")
+
+local sec3 = tab:Section("discord")
+
+sec3:Button("Discord", function()
+    SolarisLib:Notification("Notification", 'discord copied to clipboard')
+    setclipboard("https://discord.gg/jj7jUkwtQ5")
+end)
