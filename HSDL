@@ -10,8 +10,8 @@ local win = SolarisLib:New({
 })
 
 SolarisLib:Notification("Credits", 'made by ! peaW#7239 and russia#4094')
-SolarisLib:Notification("Update Log:", 'fixed loader')
-SolarisLib:Notification("Current Version:", '1.0.7')
+SolarisLib:Notification("Update Log:", 'Yes')
+SolarisLib:Notification("Current Version:", '1.2.3')
 
 --win:Tab(title <string>)
 local tab = win:Tab("hsdl")
